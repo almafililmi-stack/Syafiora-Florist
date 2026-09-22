@@ -1,6 +1,22 @@
-/* ==========================================================================
-   1. DATA STRUCTURE (Separated for CMS expansion)
-   ========================================================================== */
+/* ======================================================================
+1. DATA STRUCTURE (Separated for CMS expansion)
+====================================================================== */
+
+// ==========================================
+// SUPABASE CONNECTION
+// ==========================================
+
+const SUPABASE_URL = 'https://mdafjkmatguztjbgjgzl.supabase.co';
+
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_5BZFHzT_HdOhgOMCZEbhaA_coWPjkhn';
+
+const supabase = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+);
+
+console.log('✅ Supabase client berhasil dibuat!');
+
 
 // Category List Definitions
 const CATEGORIES = [
